@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 2</title>
+
+    <style media="screen" type="text/css">
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 35rem;
+            height: 20rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #cb60b3;
+            background: -moz-linear-gradient(left, #cb60b3 0%, #c146a1 0%, #8d1da4 24%, #6900a6 41%, #3a6541 77%, #1ca600 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, #cb60b3), color-stop(0%, #c146a1), color-stop(24%, #8d1da4), color-stop(41%, #6900a6), color-stop(77%, #3a6541), color-stop(100%, #1ca600));
+            background: -webkit-linear-gradient(left, #cb60b3 0%, #c146a1 0%, #8d1da4 24%, #6900a6 41%, #3a6541 77%, #1ca600 100%);
+            background: -o-linear-gradient(left, #cb60b3 0%, #c146a1 0%, #8d1da4 24%, #6900a6 41%, #3a6541 77%, #1ca600 100%);
+            background: -ms-linear-gradient(left, #cb60b3 0%, #c146a1 0%, #8d1da4 24%, #6900a6 41%, #3a6541 77%, #1ca600 100%);
+            background: linear-gradient(to right, #cb60b3 0%, #c146a1 0%, #8d1da4 24%, #6900a6 41%, #3a6541 77%, #1ca600 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb60b3', endColorstr='#1ca600', GradientType=1);
+        }
+
+        .button {
+            width: 15rem;
+            background-color: #262626;
+            font-family: monospace;
+            color: white;
+            height: 5rem;
+            font-size: 1.5rem;
+            border: none;
+        }
+
+        .button:hover {
+            transition-delay: .05s;
+            border: 1px solid white;
+            box-shadow: -10px 10px 6px -1px #333333;
+            animation: mover .2s linear 0s forwards, opacity .2s linear 0s forwards;
+        }
+
+        @keyframes mover {
+            0% {
+                margin-left: 0;
+
+            }
+
+            100% {
+                margin-left: .1rem;
+            }
+        }
+
+        @keyframes opacity {
+            0% {
+                opacity: .7;
+            }
+
+            100% {
+                opacity: .4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="button">Conocer más</button>
+    </div>
+</body>
+
+</html>
